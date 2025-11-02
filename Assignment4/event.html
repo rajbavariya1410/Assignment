@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Alert Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      text-align: center;
+      background-color: #f0f8ff;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Click the Button</h2>
+  <button id="myButton">Click Me</button>
+
+  <script>
+   
+    const button = document.getElementById("myButton");
+
+    button.addEventListener("click", function () {
+      alert("Button clicked!");
+    });
+  </script>
+
+</body>
+</html>

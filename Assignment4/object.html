@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Object in javascript/title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+</head>
+
+<body>
+
+    <script>
+       
+        let car = {
+            brand: "Toyota",
+            model: "Corolla",
+            year: 2020
+        };
+
+
+        document.write("Brand:", car.brand);
+        document.write("Model:", car.model);
+
+       
+        car.year = 2023;
+        car.color = "red";
+        document.write("Updated car object:" + car);
+
+    </script>
+
+</body>
+
+</html>

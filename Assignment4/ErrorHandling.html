@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Divide by Zero Handling</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Divide by Zero Example</h2>
+  <button id="divideBtn">Divide 10 by 0</button>
+  <div id="result"></div>
+
+  <script>
+    document.getElementById("divideBtn").addEventListener("click", function() {
+      try {
+        let num = 10;
+        let divisor = 0;
+        if (divisor === 0) {
+          throw new Error("Cannot divide by zero!");
+        }
+        let result = num / divisor;
+        document.getElementById("result").textContent = "Result: " + result;
+      } catch (error) {
+        document.getElementById("result").textContent = "Error: " + error.message;
+      }
+    });
+  </script>
+
+</body>
+</html>

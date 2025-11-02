@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment6</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.box {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 90%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; 
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .box {
+    width: 30%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="box header">Header</header>
+    <main class="box main">Main Content</main>
+    <footer class="box footer">Footer</footer>
+  </div>
+</body>
+</html>
