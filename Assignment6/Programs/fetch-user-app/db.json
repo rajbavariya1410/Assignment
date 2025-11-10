@@ -1,0 +1,36 @@
+{
+    "users" : [
+        {
+      "id": 1,
+      "name": "Amit Rathod",
+      "contact": "9876543210",
+      "email": "amit@example.com",
+      "password": "amit123",
+      "address": "Ahmedabad, Gujarat"
+    },
+    {
+      "id": 2,
+      "name": "Raj Bavariya",
+      "contact": "9988776655",
+      "email": "raj@example.com",
+      "password": "raj456",
+      "address": "Surat, Gujarat"
+    },
+    {
+      "id": 3,
+      "name": "VIjay Karmur",
+      "contact": "9090909090",
+      "email": "vijay@example.com",
+      "password": "vijay789",
+      "address": "Vadodara, Gujarat"
+    },
+    {
+      "id": 4,
+      "name": "Avtar Galchar",
+      "contact": "9876501234",
+      "email": "avtar@example.com",
+      "password": "avtar321",
+      "address": "Rajkot, Gujarat"
+    }
+    ]
+}
