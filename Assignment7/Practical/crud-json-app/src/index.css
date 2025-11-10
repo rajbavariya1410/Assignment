@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    float: right !important;
+}
+
+
+.nav-links {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+.nav-links.active {
+    border-bottom: 2px solid #333;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-links {
+        padding: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        float: right !important;
+    }
+    .menu-icon div {
+        width: 25px;
+        height: 3px;
+        background: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    .menu-icon.change .bar1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .menu-icon.change .bar2 {
+        opacity: 0;
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .menu-icon.change .bar3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    #task-table {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #task-table th, #task-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    #task-table {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #task-table th, #task-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+    .form-container label, .form-container input, .form-container select, .form-container button {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .form-container button {
+        margin-top: 1rem;
+    }
+    
+
+}
+

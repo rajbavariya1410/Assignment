@@ -1,0 +1,78 @@
+{
+  "contact": [],
+  "assignto": [
+    {
+      "id": "1",
+      "name": "Bavariya raj",
+      "email": "rajbavariya1410@gmail.com",
+      "position": "Front-end devloper"
+    },
+    {
+      "id": "2",
+      "name": "Rathod Amite",
+      "email": "Amitrathod@gmail.com",
+      "position": "Back-end devloper"
+    },
+    {
+      "id": "3",
+      "name": "Sakaliya Kartik",
+      "email": "Sakaliyakartik@gamil.com",
+      "position": "website designer"
+    },
+    {
+      "id": "4",
+      "name": "Sakaliya Alpesh",
+      "email": "sakaliyaalpesh@gmail.com",
+      "position": "Front-end devloper"
+    },
+    {
+      "id": "5",
+      "name": "Mer paras",
+      "email": "parasmer@gmail.com",
+      "position": "website designer"
+    },
+    {
+      "id": "6",
+      "name": "Karmur Vijay",
+      "email": "vijay123@gmail.com",
+      "position": "Front-end devloper"
+    }
+  ],
+  "addtask": [
+    {
+      "id": "dd3e",
+      "title": "crud operations",
+      "description": "CRUD operations are fundamental actions in data management: Create, Read, Update, and Delete. These operations form the basis for managing data within databases and applications, allowing users to insert, view, modify, and remove data. They are essential for dynamic applications, from user profile management and e-commerce inventory to social media posts and customer records. ",
+      "dueDate": "2025-09-22",
+      "priority": "inprogress"
+    },
+    {
+      "id": "24e1",
+      "title": "Responsive design",
+      "description": "Experience building multi viewports from responsive and adaptive web design · Experience of writing unit tests in JavaScript and using frameworks such as Jasmine ",
+      "dueDate": "2025-09-20",
+      "priority": "incomplete"
+    },
+    {
+      "id": "da12",
+      "title": "crud operations",
+      "description": "Experience building multi viewports from responsive and adaptive web design · Experience of writing unit tests in JavaScript and using frameworks such as Jasmine ",
+      "dueDate": "2025-09-16",
+      "priority": "incomplete"
+    },
+    {
+      "id": "4d66",
+      "title": "Responsive design",
+      "description": "Experience building multi viewports from responsive and adaptive web design · Experience of writing unit tests in JavaScript and using frameworks such as Jasmine ",
+      "dueDate": "2025-09-25",
+      "priority": "inprogress"
+    },
+    {
+      "id": "eed7",
+      "title": "crud operations",
+      "description": "Experience building multi viewports from responsive and adaptive web design · Experience of writing unit tests in JavaScript and using frameworks such as Jasmine ",
+      "dueDate": "2025-10-01",
+      "priority": "incomplete"
+    }
+  ]
+}
