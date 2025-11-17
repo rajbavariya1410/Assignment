@@ -1,0 +1,219 @@
+								CSS Selectors & Styling
+
+Q1.  What is a CSS selector? Provide examples of element, class, and ID selectors.
+
+=> 	CSS selectors are patterns used to select and style HTML elements. They allow developers to target specific elements or groups of elements based on various criteria, such as element type, class, ID, attributes, and hierarchy within the document structure.
+
+	Element Selector
+	->	Selects elements based on their tag name (e.g., p, div, h1).
+	-> 	Example:
+				div {
+				  text-align: center;
+				  color: blue;
+				}
+	Universal Selector
+	-> 	Selects all elements on the page using the asterisk `*`.
+	-> 	Example:
+				*{
+				background-color:blue;
+				color:white;
+				}
+
+	CSS Id Selector
+	->	Selects a single element with a specific ID. The id of an element is unique within a page, so 		the id selector is used to select one unique element , To select an element with a specific 		id, write a hash (#) character, followed by the id of the element.
+	-> 	Example:
+				#my-id {
+				  text-align: center;
+				  color: red;
+				}
+	
+	CSS Class Selector
+	->	Selects elements with a specific class. To select elements with a specific class, write a 			period (.) character, followed by the class name.
+	->	Example:	
+			.center {
+			  text-align: center;
+			  color: red;
+			}
+
+	CSS Grouping Selector
+	-> 	The grouping selector selects all the HTML elements with the same style definitions. Look 		at the following CSS code (the h1, h2, and p elements have the same style definitions):
+	->	Example:	
+				h1, div, p {
+				  text-align: center;
+				  color: red;
+				}
+
+	Attribute Selector
+	->	Selecting Elements with a Specific Attribute
+	-> 	Example:
+				input[type="checkbox"] {
+				margin-right: 5px;
+				}
+
+	Pseudo-classes and Pseudo-elements
+	-> 	Pseudo-classes: Select elements based on their state or position in the document 				(e.g., :hover, :first-child, :nth-child()).
+
+	->	Pseudo-elements: Select and style a part of an element (e.g., ::before, ::after).
+			
+
+	Combinator Selectors
+	-> 	Descendant Selector (Whitespace): Selects an element that is a descendant of another 			element.
+
+	->	Child Selector (>): Selects direct children of an element.
+
+	->	Adjacent Sibling Selector (+): Selects an element that is immediately preceded by a sibling 		element.
+	
+	->	General Sibling Selector (~): Selects siblings of an element that share the same parent.
+
+
+Q2. 	 Explain the concept of CSS specificity. How do conflicts between multiple stylesget
+resolved?
+	
+	=>	When you write CSS to style a webpage, sometimes more than one rule tries to change the 		same thing — like the color of a heading. The browser needs a way to decide which rule to 		follow. That’s where specificity comes in.
+	
+		1. Inline styles (written directly in the HTML) are the strongest.
+		-> Example:
+				<p style="color: red;">This is red</p>
+		
+		2. ID selectors (#myId) are strong.
+		-> Example:
+				#myId {
+				  color: blue;
+				}
+		
+		3. Class selectors (.myClass), attributes ([type="text"]), and things like :hover are in the 		    middle.
+		-> Example:
+				.myClass {
+				  color: green;
+				}
+		
+		4. Element tags (p, h1, div) are the weakest.
+		-> Example: 
+				p {
+				  color: black;
+				}
+
+		5. !important overrides everything — it's like saying "I don't care, do this!"
+
+
+		Example:
+				Imagine you have this Html.
+				<p id="para" class="text" style="color: red;">Hello!</p>
+
+				And This CSS
+					p {
+					  color: black;
+					}
+				.text {
+					  color: green;
+					}
+				#para {
+					  color: blue;
+					}
+
+			What color will the <p> be?
+			-> The inline style (color: red) wins because it has the highest specificity.	
+
+				!important (strongest)
+
+				Inline styles		
+
+				ID selectors
+
+				Class selectors / attributes / pseudo-classes
+
+				Tag selectors (like p, h1, etc.)
+		
+				Universal selector (*) (weakest)
+
+
+Q3.	What is the difference between internal, external, and inline CSS? Discuss the
+	advantages and disadvantages of each approach.
+
+=> 	* Inline CSS
+	CSS is written directly inside the HTML tag using the style attribute.
+	
+	Example:
+		<p style="color: blue;">This is blue text</p>
+
+	Advantages:
+		- Quick and easy for small changes.
+		- Styles only one element — very specific.
+
+	Disadvantages:
+		- Hard to maintain if you have many elements.
+		- Makes your HTML messy and long.
+		- Not reusable — you must write the same style again for other elements.
+
+	* Internal CSS
+	CSS is written inside a <style> tag in the <head> section of the HTML file.
+	
+	Example:
+		<head>
+			  <style>
+				    p {
+				      color: green;
+				    }
+			  </style>
+		</head>
+
+	Advantages:
+		- Easier to manage than inline CSS.
+		- Good for small websites or single pages.
+		- Styles are all in one place (at the top).
+
+	Disadvantages:
+		- If you have many HTML pages, you must copy the style into each one.
+		- Not great for large websites.
+
+
+	*External CSS
+		CSS is written in a separate file (like style.css), and linked to the HTML using a <link> tag.
+	
+	Example:
+		<head>
+		  <link rel="stylesheet" href="style.css">
+		</head>
+
+		p {
+ 			 color: red;
+		}
+
+	Advantages:
+		- Best for large websites.
+		- You can reuse the same CSS file on many pages.
+		- Keeps HTML clean and easy to read.
+		- Easy to update — change one file and it updates everywhere.
+
+	Disadvantages:
+		- Needs an extra file, so one more thing to manage.
+		- If the CSS file is missing or doesn’t load, styles won’t appear.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+		
+

@@ -1,0 +1,37 @@
+									CSS Grid
+
+Q1. : Explain CSS Grid and how it differs from Flexbox. When would you use Grid over
+Flexbox?
+
+=> CSS Grid 
+	- CSS Grid is a tool to create layouts using rows and columns — like a grid or table.
+	   It helps place items both horizontally and vertically in exact spots.
+	
+	- Gird And Flex-Box Different
+		- Flex-Box :- arranges items in a single row or column (one direction).
+		- Grid : arranges items in rows AND columns (two directions).
+
+	- When to use Grid
+		- When you want complex layouts with rows and columns.
+		- For example: page layouts, photo galleries, dashboards.
+
+Q2. : Describe the grid-template-columns, grid-template-rows, and grid-gap
+properties. Provide examples of how to use them.
+
+=> 1. grid-template-columns
+		- Defines how many columns and their widths in a grid.
+		-Example:
+			- grid-template-columns: 100px 200px 100px;
+			-Creates 3 columns: first 100px wide, second 200px, third 100px.
+
+	2. grid-template-rows
+		- Defines how many rows and their heights in a grid.
+		- Example:
+			- grid-template-rows: 50px 100px;
+			- Creates 2 rows: first 50px tall, second 100px tall.
+	
+	3. grid-gap (or gap)
+		- Adds space between rows and columns.
+		-Example:
+			- grid-gap: 10px;
+			- Adds 10px space between all rows and columns.
