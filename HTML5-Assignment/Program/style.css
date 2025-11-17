@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.video{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 3%;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    padding: 5px;
+}
+.video video{
+    width: 100%;
+    margin-top: 1%; 
+}
+.audio{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    padding: 5px;
+}
+.audio audio{
+    width: 100%;
+    border: 1px solid black;   
+    border-radius: 25px;
+    margin-top: 1%;
+}
+.audio hr{
+    margin-top: 1%;
+    margin-top: 1%;
+}
